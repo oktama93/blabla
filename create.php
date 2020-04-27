@@ -275,6 +275,7 @@ class blibli extends curl{
  * Running
  */
 // style 
+echo "\n";
 echo "     Blibli x SGB TEAM ```\n";
 echo "     Account Creator     ..,,,,,, .++.++-://++oo++-\n";        
 echo "              ..-::`+++/++ossyyhddmmNNNNNNNNNNNNNNNms.\n";      
@@ -399,7 +400,10 @@ while($i < $qty) {
                 echo "[i] Activation Failed!\n\n";
             }
         } 
-        $i++;       
+        $i++; 
+        if($i >= $qty) {
+            die();
+        }      
     }   
 }
 ?>
